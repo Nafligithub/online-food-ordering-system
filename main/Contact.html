@@ -1,0 +1,292 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/
+fontawesome.min.css" integrity="
+sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+<title>Contact</title>
+<link rel="stylesheet" type="text/css" href="Contact.css">
+<style>
+	*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background-image: url(image/background.jpg);
+}
+.contact
+{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: linear-gradient(to top,rgba(145,146,122,0.62),rgba(145,146,122,0.2)),url("burger.jpg");
+	background-size: cover;
+}
+
+.contact .content
+{
+	max-width: 800px;
+	text-align: center;
+}
+
+.contact .content h2
+{
+	font-size: 36px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.contact .content p
+{
+	font-weight: 300;
+	color: #fff;
+}
+
+.container
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.container .contactInfo
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container .contactInfo .box
+{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+
+.container .contactInfo .box .icon
+{
+	min-width: 60px;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+
+.container .contactInfo .box .icon .text
+{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+
+.container .contactInfo .box .icon .text h3
+{
+	font-weight: 500;
+	color: #00bcd4;
+}
+
+.contactForm
+{
+	width: 40%;
+	padding: 40px;
+	background: #fff;
+}
+
+.contactForm h2
+{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+}
+
+
+.contactForm .inputBox
+{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+
+.contactForm .inputBox span
+{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #665;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span 
+{
+	color: #665;
+	font-size: 12px;
+	transform: translatey(-20px);
+}
+
+.contactForm .inputBox input[type="submite"]
+{
+	width: 100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+}
+
+.Close a{
+	text-decoration: none;
+	color: white;
+}
+.Close:hover{
+	padding:20px 15px;
+}
+
+@media (max-width: 991px)
+{
+	.contact
+	{
+		padding: 50px;
+	}
+	.container
+	{
+		flex-direction: column;
+	}
+	.container .contactInfo
+	{
+		margin-bottom: 40px;
+	}
+	.container .contactInfo
+	{
+		width: 100%;
+	}
+}
+
+.Close
+{
+	width: 80px;
+	background: #665;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.Close a{
+	text-decoration: none;
+	color: black;
+}
+.Close:hover{
+	padding:20px 15px;
+}
+</style>
+</head>
+<body>
+    <section class="contact">
+	    <div class="content">
+		    <h2>CONTACT</h2>
+		    <p>The pain itself is very important, and the education will be followed,
+			 but it happens at such a time that there is a lot of work and pain. Over the years, I will come.</p>
+		</div>
+        <!--<div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+					<div class="text">
+					    <h3>Address<h3>
+						<p>Ikkirigollewa,<br>Wahamalgollewa,<br>Colombo-04</p>
+					</div>	
+                </div>
+				<div class="box">
+                    <div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i>
+                    </div>
+					<div class="text">
+					    <h3>Phone<h3>
+						<p>+94787823965</p>
+					</div>	
+                </div>
+				<div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+					<div class="text">
+					    <h3>Email<h3>
+						<p>almash123@gmail.com</p>
+					</div>-->	
+                </div>
+			</div>	
+			<br>
+			<br>
+			<br>
+				<div class="contactForm">
+				    <form>
+					    <h2>Send Message</h2>
+						<div class="inputBox">
+						    <input type="text" name="" required="required">
+							<span>Full Name</span>
+						</div>
+						<div class="inputBox">
+						    <input type="text" name="" required="required">
+							<span>Email</span>
+						</div>	
+						<div class="inputBox">
+						    <textarea required="required"></textarea>
+							<span>Type Your Message...</span>
+						</div>
+						<div class="inputBox">
+						    <input type="submit" name="" value="Send">
+						</div>
+  						<div class="inputBox">
+						    <button class="Close"><a href="main.php">Close</a></button>
+						</div>
+					</form>	
+                </div>
+            </div>
+		
+			 
+			 
+			 
+
+
+
+
+
+
+
+    </section>
+</body>
+</html>			 

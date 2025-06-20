@@ -1,0 +1,194 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: url(image/burger.jfif);
+	background-size: cover;
+}
+h2{
+	color: rgb(0, 0, 0);
+}
+.box
+{
+	position: relative;
+	width: 380px;
+	height:690px;
+	background: #1c1c1c;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.box::before
+{
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 420px;
+	
+}
+.box::after
+{
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 420px;
+	
+}
+.borderLine
+{
+	position: absolute;
+	top: 0;
+	inset: 0;
+}
+.borderLine::before
+{
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 410px;
+
+}
+.borderLine::after
+{
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 420px;
+	
+}	
+
+.box form
+{
+	position: absolute;
+	inset: 4px;
+	background-color: rgb(255, 255, 255);
+	padding: 50px 10px;
+	border-radius: 8px;
+	box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
+	border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+}
+.box form h1
+{
+	color: rgb(0, 0, 0);
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 0.1em; 
+}
+.box form .inputBox
+{
+	position: relative;
+	width: 300px;
+	margin-top: 35px;
+	margin-left: 30px;
+}
+.box form .inputBox input
+{
+	position: relative;
+	width: 100%;
+	padding: 20px 10px 10px;
+	background: transparent;
+	outline: none;
+	border: none;
+	box-shadow: none;
+	color: #000000;
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	z-index:10;	
+}
+.box form .inputBox span
+{
+	position: absolute;
+	left: 0;
+	padding: 20px 0px 10px;
+	pointer-events: none;
+	color: rgb(0, 0, 0);
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+}
+.box form .inputBox input:valid ~ span,
+.box form .inputBox input:focus ~ span
+{
+	color: rgb(0, 0, 0);
+	font-size: 0.75em;
+	transform: translateY(-34px);
+}
+.box form .inputBox i
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: rgb(0, 0, 0);
+	border-radius: 4px;
+	overflow: hidden;
+	transition: 0.5s;
+	pointer-events: none;
+}
+.box form .inputBox input:valid ~ span,
+.box form .inputBox input:focus ~ span
+{
+	height: 44px;
+}
+.box form .links
+{
+	display: flex;
+	justify-content: space-between;
+}
+.box form .links a
+{
+	margin: 10px 0;
+	font-size: 0.75em;
+	color: #000000;
+	text-decoration: none;
+	margin-left: 30px;
+}
+.box form .links a:hover,
+.box form .links a:nth-child(2)
+{
+	color: rgb(0, 0, 0)
+}
+.box form input[type="submit"]
+{
+	border: none;
+	outline: none;
+	padding: 9px 25px;
+	background: rgb(255, 255, 255);
+	cursor: pointer;
+	font-size: 0.9em;
+	border-radius: 4px;
+	font-weight: 600;
+	width: 100px;
+	margin-top: 10px;
+	margin-left:20px;
+}
+.box form input[type="submit"]:Active
+{
+	opacity: 0.8;
+}
+.reg{
+	margin-left: 95px;
+
+}

@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>contact</title>
+        <link rel="stylesheet" href="feedback.css">
+        <style>
+            .contact h1{
+	padding-top: 30px;
+	color: crimson;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+.form
+{
+	display:grid;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding:50px
+}
+input[type=text]{
+	margin:10px auto 30px auto;
+	width:400px;
+	padding:7px 5px;
+	border:2px solid crimson;
+	border-radius: 3px;
+}	
+	
+input[type=email]{
+	margin:10px auto 30px auto;
+	width:400px;
+	padding:7px 5px;
+	border:2px solid crimson;
+	border-radius: 3px;
+}		
+	
+input[type=number]{
+	margin:10px auto 30px auto;
+	width:400px;
+	padding:7px 5px;
+	border:2px solid crimson;
+	border-radius: 3px;
+}	
+
+.form textarea{
+	margin:10px auto 30px auto;
+	width:400px;
+	height:250px;
+	padding:7px 5px;
+	border:2px solid crimson;
+	border-radius: 3px;
+}
+
+.query
+{
+	padding:10px;
+	background-color: crimson;
+	border:none;
+	border-radius: 3px;
+	transition: 0.2 s ease;
+}	
+	
+.query a{
+	color: white;
+	text-decoration: none;
+}
+	
+.query:hover{
+	background-color: rgb(178, 20,52);
+}
+        </style>
+        </head>
+        <body>
+<div class="contact">
+    <h1>Got some queries, feel free to contact us</h1>
+    <div class="form">
+        <input type="text" placeholder="Name" id="Name">	
+        <input type="email" placeholder="Email" id="Email">
+        <input type="text" placeholder="Mobil No" id="Mobil No">
+        <textarea placeholder="Your Massage here" id="text-area" rows="5" cols="10"></textarea>
+        <button class="query"><a href="">Submit Query</a></button>
+    </div>	
+</div>
+</body>
+</html>

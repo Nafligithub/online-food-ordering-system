@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodGalery</title>
+    <link rel="stylesheet" href="foodgelary.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script>
+        function Payment(){
+            return   confirm("Enter Your Delivery Dedails")
+        }
+    </script>
+    <script>
+        function volid(){
+         return   confirm("Are you sure exit")
+        }
+    </script>
+</head>
+<body>
+   
+    <div class="container">
+        <button class="main"><a href="index.php">HOME</a></button>
+        <header>
+            <h1>Your Food Gelary</h1>
+            <div class="shopping">
+                <img src="4.jpg">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+        <div class="list"></div>
+        <div class="card">
+            <h1>Cart</h1>
+            <ul class="listcard"></ul>
+            <div class="checkout">
+                <div class="total">0</div><br>
+                <div class="closeshopping">Close</div><br>
+                <div class="pay"><button>Pay Now</button></div>
+        </div>
+    </div>
+    </div>
+<div class="paynow ">
+    <div class="form">
+        <h2>Payment Details</h2> <ion-icon name="close" class="close"></ion-icon>
+        <table>
+            <tr>
+                <td><label for="Address" class="form-label">Name</label></td>
+                <td><input type="text" class="in"></td>
+            </tr>
+            <tr>
+                <td><label for="Phone No">Phone No</label></td>
+                <td><input type="text" class="in"><br></td>
+            </tr>
+            <tr>
+                <td> <label for="payment method">payment method</label></td>
+                <td><label>cash on Payment </label><br>
+            </tr>
+            <tr>
+                <td><label for="">Total</label></td>
+                <td> <div class="Totalpayment">0</div></td>
+            </tr>
+        </table>
+        <button class="payment" onclick="return Payment()"><a href="http://localhost/nafly/food/delivery.html">PayNow</a></button><br>
+        <button class="payment" onclick="return volid()" ><a href="http://localhost/nafly/food/index.php">cancel</a></button>
+
+    </div>
+</div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
